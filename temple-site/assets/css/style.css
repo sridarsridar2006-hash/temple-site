@@ -497,7 +497,31 @@ html[lang="ta"] .step-title{ font-family: var(--font-ta-display); }
 .upi-apps{ display:flex; gap:12px; flex-wrap:wrap; margin: 14px 0 22px; }
 .upi-apps span{ border:1px solid var(--line); padding: 8px 14px; font-size:.85rem; background:#fff; }
 
-@media (max-width: 640px){
-  .hero{ padding: 56px 0 44px; }
-  .section{ padding: 46px 0; }
+/* -------------------- Responsive Breakpoints (Mobile & System) -------------------- */
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+  .section { padding: 44px 0; }
+  .hero { padding: 54px 0 42px; }
+  .hero__actions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; margin: 0 auto; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .qi-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .qi-card { padding: 16px 12px; text-align: center; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 20px; }
+  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .gallery-tile { aspect-ratio: 1 / 1; }
+  .map-frame { height: 340px; border-radius: 12px; }
+  .panel { padding: 18px; }
+  .timeline { padding-left: 24px; }
+  .timeline__dot { left: -24px; width: 18px; height: 18px; }
+  .site-header__bar { padding: 10px 14px; }
+  .brand__text .ta { font-size: 0.92rem; }
+  .brand__text .en { font-size: 0.68rem; }
 }
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .amount-grid { grid-template-columns: repeat(2, 1fr); }
+  .upi-app-grid { grid-template-columns: repeat(2, 1fr); }
+  .social-row { justify-content: center; }
+}
+
