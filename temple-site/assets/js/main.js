@@ -338,6 +338,78 @@ function initShareLocation(){
   }
 }
 
+/* ---------- Payment Receipt Generator ---------- */
+function generatePaymentReceipt(e){
+  if (e) e.preventDefault();
+  const nameEl = document.getElementById("rc-name");
+  const phoneEl = document.getElementById("rc-phone");
+  const sevaEl = document.getElementById("rc-seva");
+  const amountEl = document.getElementById("rc-amount");
+  const methodEl = document.getElementById("rc-method");
+  const refEl = document.getElementById("rc-ref");
+  const outputEl = document.getElementById("receipt-output");
+
+  if (!nameEl || !amountEl || !outputEl) return;
+
+  const name = nameEl.value.trim();
+  const phone = phoneEl ? phoneEl.value.trim() : "";
+  const seva = sevaEl ? sevaEl.value : "Temple Donation / கோயில் நன்கொடை";
+  const amount = amountEl.value.trim();
+  const method = methodEl ? methodEl.value : "UPI / Online Payment";
+  const ref = (refEl && refEl.value.trim()) ? refEl.value.trim() : "UPI-" + Math.floor(100000000 + Math.random() * 900000000);
+
+  if (!name || !amount || Number(amount) <= 0) {
+    alert("Please enter a valid Devotee Name and Amount.");
+    return;
+  }
+
+  const dateStr = new Date().toLocaleDateString("en-IN", {
+    day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit"
+  });
+  const receiptNo = "CTTAK-" + new Date().getFullYear() + "-" + Math.floor(10000 + Math.random() * 90000);
+
+  outputEl.innerHTML = `
+    <div class="receipt-card" id="printable-receipt">
+      <div class="receipt-card__header">
+        <div style="width:48px;height:48px;margin:0 auto 6px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFDF73"><path d="M12 2 L14 8 L10 8 Z"/><rect x="7" y="9" width="10" height="9"/><path d="M5 18 H19 L21 22 H3 Z"/><circle cx="12" cy="5.4" r="1.1"/></svg>
+        </div>
+        <div class="receipt-card__title">சின்ன தென்னல் திரௌபதி அம்மன் கோவில்</div>
+        <div class="receipt-card__sub">Chinna Thennal Throbathi Amman Kovil</div>
+        <div style="font-size:.78rem;color:var(--text-soft);margin-bottom:6px;">65C, Perumal Kovil St, Chinna Thennal, Nemili, TN 631051</div>
+        <div class="receipt-card__no">Receipt No: ${receiptNo}</div>
+      </div>
+      
+      <table class="receipt-table">
+        <tbody>
+          <tr><td class="lbl">Date & Time</td><td class="val">${dateStr}</td></tr>
+          <tr><td class="lbl">Devotee Name / பக்தர் பெயர்</td><td class="val">${name}</td></tr>
+          ${phone ? `<tr><td class="lbl">Contact Number</td><td class="val">${phone}</td></tr>` : ""}
+          <tr><td class="lbl">Seva / Purpose</td><td class="val">${seva}</td></tr>
+          <tr><td class="lbl">Payment Method</td><td class="val">${method}</td></tr>
+          <tr><td class="lbl">Transaction / UTR Ref</td><td class="val" style="font-family:monospace;">${ref}</td></tr>
+          <tr style="border-top:2px solid var(--secondary);"><td class="lbl" style="font-weight:700;font-size:1.05rem;color:var(--primary-dark);">Total Amount Paid</td><td class="val" style="font-size:1.3rem;color:var(--primary-dark);font-weight:800;">₹${amount}</td></tr>
+        </tbody>
+      </table>
+
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:16px;">
+        <div class="receipt-stamp">அம்மன் அருள் பெறுக<br><span style="font-size:.72rem;">Official Temple Receipt</span></div>
+        <div style="text-align:right;font-size:.75rem;color:var(--text-soft);">
+          <div>Verified Digital Receipt</div>
+          <div style="font-weight:600;color:var(--primary);">Authorized Signatory</div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;display:flex;gap:10px;justify-content:center;" class="no-print">
+        <button onclick="window.print()" class="btn btn--primary btn--sm">🖨️ Print / Save PDF</button>
+        <a href="https://wa.me/919500418125?text=${encodeURIComponent('Namaskaram, generated receipt ' + receiptNo + ' for ₹' + amount + ' by ' + name)}" target="_blank" class="btn btn--gold btn--sm">💬 Send to Temple WhatsApp</a>
+      </div>
+    </div>
+  `;
+
+  outputEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initThemeSwitcher();
   initLangSwitch();
@@ -349,3 +421,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initGeolocation();
   initShareLocation();
 });
+

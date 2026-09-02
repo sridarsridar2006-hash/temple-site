@@ -101,15 +101,58 @@
       </div>
     </div>
   </section>
-  <section class="section section--surface">
-    <div class="container" style="max-width:640px;">
-      <h2 data-i18n="donations.receiptTitle"></h2>
-      <p data-i18n="donations.receiptText"></p>
-      <table>
-        <tbody>
-          <tr><td data-i18n="donations.statusPending"></td><td>—</td></tr>
-        </tbody>
-      </table>
+  <section class="section section--surface" id="receipt-generator">
+    <div class="container" style="max-width:680px;">
+      <div class="panel panel--arch">
+        <span class="tag tag--gold" style="margin-bottom:8px;display:inline-block;">நன்கொடை ரசீது பெறுக</span>
+        <h2 style="color:var(--primary-dark);margin-bottom:6px;">🧾 Generate Temple Payment Receipt</h2>
+        <p style="color:var(--text-soft);font-size:0.92rem;margin-bottom:20px;">Enter your donation/payment details below to generate and print your official digital Kovil receipt instantly.</p>
+        
+        <form onsubmit="generatePaymentReceipt(event)">
+          <div class="field">
+            <label style="font-weight:600;">Devotee Full Name / பக்தர் பெயர் *</label>
+            <input type="text" id="rc-name" placeholder="e.g. Sridar M" required>
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label style="font-weight:600;">Phone / WhatsApp Number</label>
+              <input type="tel" id="rc-phone" placeholder="e.g. +91 9500418125">
+            </div>
+            <div class="field">
+              <label style="font-weight:600;">Amount Paid (₹) *</label>
+              <input type="number" id="rc-amount" placeholder="e.g. 500" min="1" required>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label style="font-weight:600;">Seva / Donation Type</label>
+              <select id="rc-seva">
+                <option value="General Temple Donation / பொது கோயில் நன்கொடை">General Temple Donation</option>
+                <option value="Annadhanam Seva / அன்னதான சேவை">Annadhanam Seva</option>
+                <option value="Kumbhabhishekam Fund / கும்பாபிஷேக நிதி">Kumbhabhishekam Fund</option>
+                <option value="Daily Pooja / Abhishekam / தினசரி பூஜை">Daily Pooja / Abhishekam</option>
+                <option value="Thimithi Thiruvizha Fund / திருவிழா நிதி">Thimithi Thiruvizha Fund</option>
+              </select>
+            </div>
+            <div class="field">
+              <label style="font-weight:600;">Payment Method</label>
+              <select id="rc-method">
+                <option value="UPI / Google Pay / PhonePe">UPI / Google Pay / PhonePe</option>
+                <option value="Paytm / BHIM">Paytm / BHIM</option>
+                <option value="Bank NetBanking / Transfer">Bank Transfer</option>
+                <option value="Cash at Temple Office">Cash at Temple Office</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label style="font-weight:600;">UPI Transaction UTR / Ref Number (Optional)</label>
+            <input type="text" id="rc-ref" placeholder="e.g. 423910582910">
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" style="padding:14px;font-size:1.02rem;">🧾 Generate & Download Official Receipt</button>
+        </form>
+
+        <div id="receipt-output" style="margin-top:24px;"></div>
+      </div>
     </div>
   </section>
 
