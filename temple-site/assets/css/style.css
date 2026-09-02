@@ -444,6 +444,7 @@ html[lang="ta"] .btn{ font-family: var(--font-ta-body); }
   border: 1px solid var(--secondary); color: var(--primary-dark); background: #FBEFD3;
 }
 .tag--sample{ border-color:#9B8360; color:#6B4E3D; background:#F1E7D2; }
+.tag:empty, .tag--sample:empty{ display: none !important; }
 
 /* -------------------- Timeline (history) -------------------- */
 .timeline{ position:relative; max-width: 760px; margin: 0 auto; padding-left: 34px; }
