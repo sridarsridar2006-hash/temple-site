@@ -1,49 +1,50 @@
 /* ==========================================================================
    CHINNA THENNAL THROBATHI AMMAN KOVIL — DESIGN SYSTEM
-   Palette: deep maroon temple red, antique gold, sandalwood cream, dark brown
-   Type: Marcellus (EN display) / Noto Serif Tamil (TA display)
-         Inter (EN body) / Noto Sans Tamil (TA body)
+   Palette: crimson-gold temple red, jewel indigo-violet, electric teal, 3D glow
+   Type: Cinzel Decorative (EN display) / Baloo Thambi 2 (Tamil)
+         Nunito (EN body) / Baloo Thambi 2 (TA body)
    ========================================================================== */
 
 :root{
-  --primary: #70121D;        /* deep celestial maroon / temple red */
+  --primary: #8B1120;        /* deep crimson temple red */
   --primary-dark: #4A0B13;   /* shadow crimson */
   --secondary: #D4AF37;      /* liquid metallic gold */
   --accent: #FFDF73;         /* vibrant golden glow */
-  --background: #FAF5EA;     /* warm sandalwood cream */
+  --background: #F0EEF8;     /* cool lavender-pearl base */
   --surface: #FFFFFF;        /* clean glass surface */
-  --surface-alt: #FFFBF3;    /* soft gold-tinted surface */
-  --text: #1E0C09;           /* high contrast dark ink for maximum mobile legibility */
-  --text-soft: #523527;      /* crisp warm brown */
-  --line: #E2D0B0;           /* hairline gold border */
+  --surface-alt: #EEEAF8;    /* soft violet-tinted surface */
+  --text: #12062A;           /* deep indigo ink */
+  --text-soft: #4A3F72;      /* muted indigo-violet */
+  --line: #C8C0E8;           /* violet hairline border */
   --success: #1E6B2D;
   --radius-arch: 12px 12px 0 0;
   --radius-card: 14px;
-  --shadow-soft: 0 14px 36px -10px rgba(74,11,19,0.22);
+  --shadow-soft: 0 14px 36px -10px rgba(60,20,100,0.22);
   --shadow-glow: 0 0 24px rgba(212,175,55,0.35);
   --font-en-display: "Cinzel Decorative", "Cormorant Garamond", "Marcellus", serif;
   --font-en-body: "Nunito", "Outfit", "Inter", sans-serif;
   --font-ta-display: "Baloo Thambi 2", "Mukta Malar", "Noto Serif Tamil", serif;
   --font-ta-body: "Baloo Thambi 2", "Noto Sans Tamil", sans-serif;
   --glow-gold: 0 0 18px rgba(212,175,55,0.55), 0 0 40px rgba(212,175,55,0.22);
-  --glow-red: 0 0 18px rgba(112,18,29,0.55), 0 0 40px rgba(112,18,29,0.22);
-  --shadow-3d: 0 20px 60px -10px rgba(74,11,19,0.38), 0 8px 20px rgba(0,0,0,0.18);
+  --glow-violet: 0 0 20px rgba(100,60,200,0.45), 0 0 50px rgba(80,40,160,0.2);
+  --glow-teal: 0 0 20px rgba(20,180,160,0.45), 0 0 50px rgba(0,150,130,0.2);
+  --shadow-3d: 0 20px 60px -10px rgba(60,20,100,0.35), 0 8px 20px rgba(0,0,0,0.15);
   --glass-bg: rgba(255,255,255,0.08);
-  --glass-border: rgba(255,220,100,0.25);
+  --glass-border: rgba(180,140,255,0.25);
 }
 
 /* -------------------- 5 Unique AI Temple Themes -------------------- */
 html[data-theme="sandalwood"] {
-  --primary: #70121D;
+  --primary: #8B1120;
   --primary-dark: #4A0B13;
   --secondary: #D4AF37;
   --accent: #FFDF73;
-  --background: #FAF5EA;
+  --background: #F0EEF8;
   --surface: #FFFFFF;
-  --surface-alt: #FFFBF3;
-  --text: #1E0C09;
-  --text-soft: #523527;
-  --line: #E2D0B0;
+  --surface-alt: #EEEAF8;
+  --text: #12062A;
+  --text-soft: #4A3F72;
+  --line: #C8C0E8;
 }
 
 html[data-theme="emerald"] {
@@ -101,25 +102,29 @@ html[data-theme="midnight"] {
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-/* ====== 3D Multi-Layer Background ====== */
+/* ====== 3D Multi-Layer Jewel Tone Background ====== */
 body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background-color: #FAF5EA;
+  background-color: #F0EEF8;
   background-image:
-    /* Top-left golden sun burst */
-    radial-gradient(ellipse 60% 50% at 8% 10%, rgba(243,196,78,0.18) 0%, transparent 55%),
-    /* Center-right deep maroon depth glow */
-    radial-gradient(ellipse 55% 60% at 92% 30%, rgba(112,18,29,0.13) 0%, transparent 55%),
-    /* Bottom-left cool depth shadow */
-    radial-gradient(ellipse 50% 45% at 15% 88%, rgba(74,11,19,0.10) 0%, transparent 50%),
-    /* Bottom-right golden warmth */
-    radial-gradient(ellipse 65% 50% at 88% 92%, rgba(212,175,55,0.12) 0%, transparent 55%),
-    /* Central ambient glow */
-    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,243,200,0.22) 0%, transparent 65%),
-    /* Base sandalwood gradient */
-    linear-gradient(160deg, #FDF8EE 0%, #FAF0D5 35%, #F5E8CC 65%, #FDF6E8 100%);
+    /* Top-left violet-indigo glow */
+    radial-gradient(ellipse 60% 55% at 5% 8%,  rgba(120,60,220,0.13) 0%, transparent 55%),
+    /* Top-right electric teal burst */
+    radial-gradient(ellipse 55% 50% at 95% 8%,  rgba(20,180,160,0.11) 0%, transparent 52%),
+    /* Center-left deep blue depth */
+    radial-gradient(ellipse 45% 60% at 10% 52%, rgba(40,80,200,0.09) 0%, transparent 50%),
+    /* Center-right magenta-rose glow */
+    radial-gradient(ellipse 50% 55% at 92% 55%, rgba(200,40,100,0.08) 0%, transparent 52%),
+    /* Bottom-left indigo shadow */
+    radial-gradient(ellipse 55% 45% at 12% 92%, rgba(60,20,140,0.10) 0%, transparent 50%),
+    /* Bottom-right teal-gold warmth */
+    radial-gradient(ellipse 60% 50% at 90% 94%, rgba(212,175,55,0.10) 0%, transparent 55%),
+    /* Central purple-pearl ambient */
+    radial-gradient(ellipse 75% 55% at 50% 50%, rgba(180,160,255,0.10) 0%, transparent 65%),
+    /* Base jewel gradient — violet to pearl-blue */
+    linear-gradient(155deg, #EDE8F8 0%, #E8EAF8 25%, #EBF0FA 50%, #E8ECF8 75%, #EEE8F8 100%);
   color: var(--text);
   font-family: var(--font-en-body);
   line-height: 1.65;
@@ -166,7 +171,7 @@ img{ max-width: 100%; display:block; }
 .container{ max-width: 1180px; margin: 0 auto; padding: 0 20px; }
 .section{ padding: 64px 0; }
 .section--tight{ padding: 40px 0; }
-.section--surface{ background: var(--surface); }
+.section--surface{ background: linear-gradient(160deg, #F5F2FF 0%, #EEEAFF 50%, #F2F0FF 100%); }
 .section-heading{ text-align:center; max-width: 640px; margin: 0 auto 40px; }
 .section-heading p{ margin: 0 auto; color: var(--text-soft); }
 .kicker{
@@ -377,8 +382,8 @@ html[lang="ta"] .btn{ font-family: var(--font-ta-body); }
   display:grid; grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); gap: 20px;
 }
 .qi-card{
-  background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,248,230,0.90));
-  border: 1px solid rgba(212,175,55,0.25);
+  background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(238,232,255,0.88));
+  border: 1px solid rgba(160,120,240,0.22);
   border-top: 4px solid var(--secondary);
   border-radius: 14px;
   padding: 24px 18px;
@@ -387,7 +392,7 @@ html[lang="ta"] .btn{ font-family: var(--font-ta-body); }
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 16px rgba(74,11,19,0.07), 0 1px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(60,20,120,0.08), 0 1px 4px rgba(0,0,0,0.05);
   transition: box-shadow .22s ease, transform .22s ease, border-color .22s ease;
 }
 .qi-card::before{
@@ -399,9 +404,9 @@ html[lang="ta"] .btn{ font-family: var(--font-ta-body); }
 }
 .qi-card:hover::before{ left:130%; }
 .qi-card:hover{
-  box-shadow: 0 14px 40px rgba(74,11,19,0.18), 0 4px 12px rgba(212,175,55,0.2);
+  box-shadow: 0 14px 40px rgba(60,20,120,0.18), 0 4px 14px rgba(120,60,220,0.18);
   transform: translateY(-6px) scale(1.02);
-  border-color: rgba(212,175,55,0.6);
+  border-color: rgba(160,120,240,0.55);
 }
 .qi-card__icon{ font-size: 2rem; margin-bottom: 12px; display:block; filter: drop-shadow(0 2px 4px rgba(74,11,19,0.2)); }
 .qi-card h3{ font-size: 1.05rem; margin-bottom: 6px; }
@@ -409,24 +414,24 @@ html[lang="ta"] .btn{ font-family: var(--font-ta-body); }
 
 /* -------------------- Cards / panels (3D Depth) -------------------- */
 .panel{
-  background: linear-gradient(145deg, #ffffff, #fffbf2);
-  border: 1px solid rgba(212,175,55,0.2);
+  background: linear-gradient(145deg, #ffffff, #F0EEFF);
+  border: 1px solid rgba(160,120,240,0.18);
   border-radius: 14px;
   padding: 28px;
   box-shadow:
-    0 2px 0 rgba(212,175,55,0.15),
-    0 6px 24px rgba(74,11,19,0.08);
+    0 2px 0 rgba(160,120,240,0.12),
+    0 6px 24px rgba(60,20,120,0.07);
   transition: box-shadow .22s ease, transform .22s ease;
 }
 .panel:hover{
-  box-shadow: 0 12px 40px rgba(74,11,19,0.14), 0 2px 0 rgba(212,175,55,0.3);
+  box-shadow: 0 12px 40px rgba(60,20,120,0.13), 0 2px 0 rgba(160,120,240,0.28);
   transform: translateY(-3px);
 }
 .panel--arch{ border-top: none; position:relative; padding-top: 34px; }
 .panel--arch::before{
   content:""; position:absolute; top:0; left:50%; transform: translateX(-50%);
   width: 80px; height: 4px;
-  background: linear-gradient(90deg, var(--secondary), var(--accent), var(--secondary));
+  background: linear-gradient(90deg, #7C3AED, var(--accent), #14B8A6);
   border-radius: 0 0 4px 4px;
 }
 
