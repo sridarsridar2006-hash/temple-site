@@ -207,7 +207,6 @@ home_content = f'''  <section class="hero">
   <section class="section section--surface">
     <div class="container grid-2">
       <div class="panel panel--arch">
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h2 data-i18n="home.todayPoojaTitle"></h2>
         <p data-i18n="home.todayPoojaSub" style="margin-bottom:18px;"></p>
         <table>
@@ -220,7 +219,6 @@ home_content = f'''  <section class="hero">
         </table>
       </div>
       <div class="panel panel--arch">
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h2 data-i18n="home.festivalTitle"></h2>
         <p><strong>Aadi Thiruvizha / ஆடி திருவிழா</strong><br>[ADD FESTIVAL DATE] · [ADD FESTIVAL TIME]</p>
         <p>[Add a short description of the upcoming festival once confirmed by the temple administration.]</p>
@@ -238,12 +236,12 @@ home_content = f'''  <section class="hero">
         <div class="announce-item is-high">
           <div class="announce-item__meta">01 September 2026</div>
           <strong>Kumbhabhishekam Planning Meeting / கும்பாபிஷேக ஆலோசனை கூட்டம்</strong>
-          <p style="margin:6px 0 0;">[Sample announcement — replace with real temple news.]</p>
+          <p style="margin:6px 0 0;"></p>
         </div>
         <div class="announce-item">
           <div class="announce-item__meta">28 August 2026</div>
           <strong>Weekly Abhishekam Schedule / வார அபிஷேக அட்டவணை</strong>
-          <p style="margin:6px 0 0;">[Sample announcement — replace with real temple news.]</p>
+          <p style="margin:6px 0 0;"></p>
         </div>
       </div>
       <div style="text-align:center;margin-top:24px;">
@@ -255,13 +253,11 @@ home_content = f'''  <section class="hero">
   <section class="section section--surface">
     <div class="container grid-2">
       <div>
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h2 data-i18n="home.aboutTitle"></h2>
         <p data-i18n="about.introBody"></p>
         <a class="btn btn--outline-dark btn--sm" href="about.html" data-i18n="home.aboutCta"></a>
       </div>
       <div>
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h2 data-i18n="home.deityTitle"></h2>
         <p data-i18n="deity.introBody"></p>
         <a class="btn btn--outline-dark btn--sm" href="deity.html" data-i18n="home.deityCta"></a>
@@ -321,7 +317,6 @@ home_content = f'''  <section class="hero">
 # ==========================================================================
 about_content = page_hero("about.title") + f'''  <section class="section">
     <div class="container" style="max-width:760px;">
-      <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
       <h2 data-i18n="about.introHeading"></h2>
       <p data-i18n="about.introBody"></p>
       <h3 data-i18n="about.significanceHeading"></h3>
@@ -341,7 +336,6 @@ about_content = page_hero("about.title") + f'''  <section class="section">
 def timeline_item(dot_label, heading_key, desc_key):
     return f'''      <div class="timeline__item">
         <span class="timeline__dot"></span>
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h3 data-i18n="{heading_key}"></h3>
         <p data-i18n="{desc_key}"></p>
       </div>'''
@@ -371,7 +365,6 @@ deity_content = page_hero("deity.title") + f'''  <section class="section">
         <span class="cat" data-i18n="nav.deity"></span>
       </div>
       <div>
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h2 data-i18n="deity.introHeading"></h2>
         <p style="font-family:var(--font-ta-display);font-size:1.3rem;color:var(--primary);" data-i18n="deity.tamilName"></p>
         <p data-i18n="deity.introBody"></p>
@@ -428,8 +421,8 @@ pooja_content = page_hero("pooja.title", "pooja.intro") + f'''  <section class="
             <th data-i18n="pooja.sevaTime"></th><th data-i18n="pooja.sevaAmount"></th><th data-i18n="pooja.sevaAvail"></th>
           </tr></thead>
           <tbody>
-            <tr><td data-i18n="pooja.archana"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>₹50 (sample)</td><td data-i18n="pooja.available"></td></tr>
-            <tr><td data-i18n="pooja.abhishekam"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>₹250 (sample)</td><td data-i18n="pooja.available"></td></tr>
+            <tr><td data-i18n="pooja.archana"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>₹50</td><td data-i18n="pooja.available"></td></tr>
+            <tr><td data-i18n="pooja.abhishekam"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>₹250</td><td data-i18n="pooja.available"></td></tr>
             <tr><td data-i18n="pooja.festivalPooja"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>—</td><td data-i18n="pooja.contactOffice"></td></tr>
             <tr><td data-i18n="pooja.communityPooja"></td><td>[ADD DATE]</td><td>[ADD TIME]</td><td>—</td><td data-i18n="pooja.contactOffice"></td></tr>
           </tbody>
@@ -444,7 +437,6 @@ pooja_content = page_hero("pooja.title", "pooja.intro") + f'''  <section class="
 # ==========================================================================
 def festival_card(name, tamil, date, time):
     return f'''      <div class="panel panel--arch">
-        <span class="tag tag--sample" data-i18n="home.sampleLabel"></span>
         <h3>{name}</h3>
         <p style="font-family:var(--font-ta-display);color:var(--primary);margin-bottom:6px;">{tamil}</p>
         <p style="margin-bottom:4px;"><strong data-i18n="festivals.date"></strong>: {date}</p>
@@ -484,17 +476,17 @@ announcements_content = page_hero("announcements.title", "announcements.intro") 
       <div class="announce-item is-high">
         <div class="announce-item__meta"><span data-i18n="announcements.priority.high"></span> · <span data-i18n="announcements.published"></span>: 01 September 2026</div>
         <strong>Kumbhabhishekam Planning Meeting / கும்பாபிஷேக ஆலோசனை கூட்டம்</strong>
-        <p style="margin:6px 0 0;">[Sample announcement text — replace with real temple news from the administration.]</p>
+        <p style="margin:6px 0 0;"></p>
       </div>
       <div class="announce-item">
         <div class="announce-item__meta"><span data-i18n="announcements.priority.normal"></span> · <span data-i18n="announcements.published"></span>: 28 August 2026</div>
         <strong>Weekly Abhishekam Schedule / வார அபிஷேக அட்டவணை</strong>
-        <p style="margin:6px 0 0;">[Sample announcement text — replace with real temple news from the administration.]</p>
+        <p style="margin:6px 0 0;"></p>
       </div>
       <div class="announce-item">
         <div class="announce-item__meta"><span data-i18n="announcements.priority.normal"></span> · <span data-i18n="announcements.published"></span>: 15 August 2026</div>
         <strong>Volunteer Registration Open / தன்னார்வலர் பதிவு தொடங்கியது</strong>
-        <p style="margin:6px 0 0;">[Sample announcement text — replace with real temple news from the administration.]</p>
+        <p style="margin:6px 0 0;"></p>
       </div>
     </div>
   </section>
