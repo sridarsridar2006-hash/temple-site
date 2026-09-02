@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donations | Chinna Thennal Throbathi Amman Kovil</title>
-<meta name="description" content="Support Chinna Thennal Throbathi Amman Kovil via UPI, Google Pay or PhonePe.">
-<meta property="og:title" content="Donations | Chinna Thennal Throbathi Amman Kovil">
-<meta property="og:description" content="Support Chinna Thennal Throbathi Amman Kovil via UPI, Google Pay or PhonePe.">
+<title>Donations | Throbathi Amman Thirukovil</title>
+<meta name="description" content="Support Throbathi Amman Thirukovil via UPI, Google Pay or PhonePe.">
+<meta property="og:title" content="Donations | Throbathi Amman Thirukovil">
+<meta property="og:description" content="Support Throbathi Amman Thirukovil via UPI, Google Pay or PhonePe.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Nunito:wght@400;500;600;700&family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,8 +24,8 @@
   <circle cx="12" cy="5.4" r="1.1" fill="#7A1420"/>
 </svg></span>
         <span class="brand__text">
-          <span class="ta">சின்ன தென்னல் திரௌபதி அம்மன் கோவில்</span>
-          <span class="en">Chinna Thennal Throbathi Amman Kovil</span>
+          <span class="ta">திரௌபதி அம்மன் திருக்கோவில்</span>
+          <span class="en">Throbathi Amman Thirukovil</span>
         </span>
       </a>
       <nav class="nav" aria-label="Main navigation">
@@ -64,39 +64,35 @@
     </div>
   </section>
   <section class="section">
-    <div class="container grid-2">
-      <div class="panel panel--arch" data-donation-form>
-        <h2 data-i18n="donations.chooseAmount"></h2>
-        <div class="amount-grid">
-          <button type="button" class="amount-btn" data-amount="100">₹100</button>
-          <button type="button" class="amount-btn" data-amount="250">₹250</button>
-          <button type="button" class="amount-btn" data-amount="500">₹500</button>
-          <button type="button" class="amount-btn" data-amount="1000">₹1000</button>
+    <div class="container" style="max-width:520px;">
+      <div class="panel panel--arch" style="text-align:center;">
+
+        <!-- UPI ID -->
+        <p style="font-size:.85rem;color:var(--text-soft);margin-bottom:4px;" data-i18n="donations.upiIdLabel"></p>
+        <div class="copy-upi-box" style="justify-content:center;margin-bottom:20px;">
+          <span class="copy-upi-val" id="upi-id-val">jagadishjaga2004-1@okicici</span>
+          <button class="btn-copy" onclick="navigator.clipboard.writeText('jagadishjaga2004-1@okicici');this.textContent='✓ Copied';this.classList.add('is-copied');setTimeout(()=>{this.textContent='Copy';this.classList.remove('is-copied')},2000)">Copy</button>
         </div>
-        <div class="field">
-          <label data-i18n="donations.customAmount"></label>
-          <input type="number" min="1" data-custom-amount placeholder="₹">
-        </div>
-        <button class="btn btn--primary btn--block" data-pay-btn data-upi-id="jagadishjaga2004-1@okicici" data-payee-name="Jagadish M" data-i18n="donations.donateNow"></button>
-        <p class="form-msg" data-donation-msg></p>
-        <p style="margin-top:14px;font-size:.85rem;color:var(--text-soft);" data-i18n="donations.payVia"></p>
-        <div class="upi-apps"><span>Google Pay</span><span>PhonePe</span><span>UPI</span></div>
-      </div>
-      <div>
-        <div class="panel" style="margin-bottom:18px;">
-          <p style="font-size:.85rem;color:var(--text-soft);margin-bottom:4px;" data-i18n="donations.upiIdLabel"></p>
-          <p style="font-family:monospace;font-size:1.05rem;">jagadishjaga2004-1@okicici</p>
-          <div class="qr-box" style="margin-top:14px;">
-            <div class="qr-frame"><img data-qr-img src="payment/upi-qr.png" alt="UPI QR Code - Jagadish M"></div>
-            <p style="font-size:.82rem;color:var(--text-soft);margin:0;" data-i18n="donations.qrCaption"></p>
+
+        <!-- QR Code -->
+        <div class="qr-card-container" style="margin:0 auto 20px;">
+          <div class="qr-frame-img">
+            <img data-qr-img src="payment/upi-qr.png" alt="UPI QR Code - Throbathi Amman Thirukovil">
           </div>
+          <p style="font-size:.82rem;color:var(--text-soft);margin:0;" data-i18n="donations.qrCaption"></p>
         </div>
-        <div class="security-box" style="margin-bottom:14px;">
+
+        <!-- Pay via apps row -->
+        <p style="font-size:.85rem;color:var(--text-soft);margin-bottom:10px;" data-i18n="donations.payVia"></p>
+        <div class="upi-apps" style="justify-content:center;margin-bottom:20px;">
+          <span>Google Pay</span><span>PhonePe</span><span>Paytm</span><span>BHIM UPI</span>
+        </div>
+
+        <!-- Security & Disclaimer -->
+        <div class="security-box" style="text-align:left;border-top:1px dashed var(--line);padding-top:16px;margin-top:4px;">
           <h4 style="margin:0 0 6px;color:var(--primary-dark);font-family:var(--font-en-display);" data-i18n="donations.securityTitle"></h4>
-          <p style="margin:0;font-size:.9rem;" data-i18n="donations.securityText"></p>
-        </div>
-        <div class="disclaimer-box">
-          <p style="margin:0;" data-i18n="donations.disclaimer"></p>
+          <p style="margin:0 0 10px;font-size:.9rem;" data-i18n="donations.securityText"></p>
+          <p style="margin:0;font-size:.82rem;color:var(--text-soft);" data-i18n="donations.disclaimer"></p>
         </div>
       </div>
     </div>
