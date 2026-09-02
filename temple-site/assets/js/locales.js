@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    TRANSLATIONS
    Every piece of UI text lives here, keyed as "page.section.item".
    To add a new string: add the same key to BOTH en and ta, then use
@@ -51,7 +51,7 @@ const TRANSLATIONS = {
     "home.qiContact": "Contact",
     "home.qiContactDesc": "Reach the temple administration",
     "home.todayPoojaTitle": "Today's Pooja Timings",
-    "home.todayPoojaSub": "Daily pooja timings",
+    "home.todayPoojaSub": "Sample timings — the temple office will update these",
     "home.festivalTitle": "Next Festival",
     "home.festivalCta": "See full festival calendar",
     "home.announceTitle": "Announcements",
@@ -68,7 +68,7 @@ const TRANSLATIONS = {
     "home.locationTitle": "Find the Temple",
     "home.locationCta": "Get Directions",
     "home.contactTitle": "Get in Touch",
-    "home.sampleLabel": "",
+    "home.sampleLabel": "Sample content",
 
     "about.title": "About the Temple",
     "about.introHeading": "Chinna Thennal Throbathi Amman Kovil",
@@ -105,12 +105,12 @@ const TRANSLATIONS = {
     "deity.note": "This devotional content is based on authentic temple invitation records and historical archives of Chinna Thennal Throbathi Amman Kovil.",
 
     "pooja.title": "Daily Pooja Timings",
-    "pooja.intro": "Daily pooja schedule at the sanctum.",
+    "pooja.intro": "These are sample timings. The temple office will confirm and update the actual daily schedule.",
     "pooja.nameCol": "Pooja",
     "pooja.timeCol": "Time",
     "pooja.noteCol": "Note",
     "pooja.sevaTitle": "Special Pooja & Seva",
-    "pooja.sevaIntro": "Devotees may request the following special seva services at the temple.",
+    "pooja.sevaIntro": "Devotees may request the following services. Dates, timings and donation amounts shown are samples only.",
     "pooja.sevaName": "Service",
     "pooja.sevaDate": "Date",
     "pooja.sevaTime": "Time",
@@ -149,7 +149,7 @@ const TRANSLATIONS = {
     "announcements.empty": "No announcements have been published yet.",
 
     "gallery.title": "Temple Gallery",
-    "gallery.intro": "A visual glimpse of the temple, the goddess, festivals and village life. ",
+    "gallery.intro": "A visual glimpse of the temple, the goddess, festivals and village life. Replace the sample tiles with real photographs — see docs/image-guide.md.",
     "gallery.filterAll": "All",
     "gallery.catTemple": "Temple",
     "gallery.catGoddess": "Goddess",
@@ -312,7 +312,7 @@ const TRANSLATIONS = {
     "home.locationTitle": "கோவிலைக் கண்டறியுங்கள்",
     "home.locationCta": "வழி காட்டு",
     "home.contactTitle": "தொடர்பு கொள்ள",
-    "home.sampleLabel": "",
+    "home.sampleLabel": "மாதிரி உள்ளடக்கம்",
 
     "about.title": "கோவில் பற்றி",
     "about.introHeading": "சின்ன தென்னல் திரௌபதி அம்மன் கோவில்",
