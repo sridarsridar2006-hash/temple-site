@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://your-temple-domain.example/index.html</loc></url>
+  <url><loc>https://your-temple-domain.example/about.html</loc></url>
+  <url><loc>https://your-temple-domain.example/history.html</loc></url>
+  <url><loc>https://your-temple-domain.example/deity.html</loc></url>
+  <url><loc>https://your-temple-domain.example/pooja.html</loc></url>
+  <url><loc>https://your-temple-domain.example/festivals.html</loc></url>
+  <url><loc>https://your-temple-domain.example/announcements.html</loc></url>
+  <url><loc>https://your-temple-domain.example/gallery.html</loc></url>
+  <url><loc>https://your-temple-domain.example/donations.html</loc></url>
+  <url><loc>https://your-temple-domain.example/volunteers.html</loc></url>
+  <url><loc>https://your-temple-domain.example/contact.html</loc></url>
+  <url><loc>https://your-temple-domain.example/location.html</loc></url>
+</urlset>
