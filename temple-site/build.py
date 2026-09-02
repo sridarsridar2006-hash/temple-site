@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Build script — assembles every page of the temple website from a shared
 header/footer and per-page content blocks defined below.
@@ -101,7 +101,7 @@ def footer():
       <div>
         <h4 data-i18n="footer.contactTitle"></h4>
         <ul>
-          <li id="footer-address">65C, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</li>
+          <li id="footer-address">119, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</li>
           <li id="footer-phone"><a href="tel:+919500418125" style="color:inherit;text-decoration:none;">+91 95004 18125</a></li>
           <li id="footer-email"><a href="mailto:sridarm2006@gmail.com" style="color:inherit;text-decoration:none;">sridarm2006@gmail.com</a></li>
         </ul>
@@ -306,7 +306,7 @@ home_content = f'''  <section class="hero">
       <div>
         <h2 data-i18n="home.contactTitle"></h2>
         <ul class="info-list">
-          <li><b data-i18n="contact.addressTitle"></b><span>65C, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</span></li>
+          <li><b data-i18n="contact.addressTitle"></b><span>119, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</span></li>
           <li><b data-i18n="contact.phoneTitle"></b><a href="tel:+919500418125" style="color:var(--primary);text-decoration:none;">+91 95004 18125</a></li>
           <li><b data-i18n="contact.emailTitle"></b><a href="mailto:sridarm2006@gmail.com" style="color:var(--primary);text-decoration:none;">sridarm2006@gmail.com</a></li>
         </ul>
@@ -619,7 +619,7 @@ contact_content = page_hero("contact.title") + '''  <section class="section">
     <div class="container grid-2">
       <div>
         <ul class="info-list">
-          <li><b data-i18n="contact.addressTitle"></b><span>65C, Perumal Kovil Street, Chinna Thennal, Nemili, Tamil Nadu 631051</span></li>
+          <li><b data-i18n="contact.addressTitle"></b><span>119, Perumal Kovil Street, Chinna Thennal, Nemili, Tamil Nadu 631051</span></li>
           <li><b data-i18n="contact.phoneTitle"></b><a href="tel:+919500418125" style="color:var(--primary);text-decoration:none;">+91 95004 18125</a></li>
           <li><b data-i18n="contact.emailTitle"></b><a href="mailto:sridarm2006@gmail.com" style="color:var(--primary);text-decoration:none;">sridarm2006@gmail.com</a></li>
         </ul>
@@ -684,7 +684,7 @@ location_content = page_hero("location.title", "location.intro") + '''  <section
         <a class="btn btn--primary" href="https://maps.app.goo.gl/MZkAEkMwwRaAJEMG9?g_st=aw" target="_blank" rel="noopener" data-direction-link data-i18n="location.getDirections">📍 See Real-Time Location on Maps</a>
       </div>
       <ul class="info-list" style="max-width:520px;margin:32px auto 0;">
-        <li><b data-i18n="contact.addressTitle"></b><span id="location-address">65C, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</span></li>
+        <li><b data-i18n="contact.addressTitle"></b><span id="location-address">119, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051</span></li>
         <li><b data-i18n="contact.phoneTitle"></b><a href="tel:+919500418125" style="color:var(--primary);text-decoration:none;">+91 95004 18125</a></li>
         <li><b data-i18n="contact.emailTitle"></b><a href="mailto:sridarm2006@gmail.com" style="color:var(--primary);text-decoration:none;">sridarm2006@gmail.com</a></li>
       </ul>

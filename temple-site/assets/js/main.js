@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    MAIN SITE SCRIPT
    Handles: language switching, mobile nav, UPI link generation,
    simple form feedback, gallery filtering. No build step required —
@@ -376,7 +376,7 @@ function generatePaymentReceipt(e){
         </div>
         <div class="receipt-card__title">சின்ன தென்னல் திரௌபதி அம்மன் கோவில்</div>
         <div class="receipt-card__sub">Chinna Thennal Throbathi Amman Kovil</div>
-        <div style="font-size:.78rem;color:var(--text-soft);margin-bottom:6px;">65C, Perumal Kovil St, Chinna Thennal, Nemili, TN 631051</div>
+        <div style="font-size:.78rem;color:var(--text-soft);margin-bottom:6px;">119, Perumal Kovil St, Chinna Thennal, Nemili, TN 631051</div>
         <div class="receipt-card__no">Receipt No: ${receiptNo}</div>
       </div>
       
