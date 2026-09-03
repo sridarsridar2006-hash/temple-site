@@ -1,0 +1,36 @@
+﻿{
+  "name": {
+    "english": "Chinna Thennal Throbathi Amman Kovil",
+    "tamil": "சின்ன தென்னல் திரௌபதி அம்மன் கோவில்"
+  },
+  "tagline": {
+    "english": "May the blessings of Throbathi Amman be with everyone",
+    "tamil": "அம்மன் அருளால் அனைவரும் நலமுடன் வாழ்க"
+  },
+  "address": "119, Perumal Kovil Street, Chinna Thennal, Tamil Nadu 631051",
+  "village": "Chinna Thennal",
+  "taluk": "Vandavasi / Gingee region",
+  "district": "Tiruvannamalai / Villupuram",
+  "state": "Tamil Nadu",
+  "pincode": "631051",
+  "phone": "+91 95004 18125",
+  "email": "sridarm2006@gmail.com",
+  "upiId": "jagadishjaga2004-1@okicici",
+  "payeeName": "Jagadish M",
+  "googleMapsEmbedUrl": "https://maps.google.com/maps?q=Chinna+Thennal+Throbathi+Amman+Kovil+Tamil+Nadu&t=&z=14&ie=UTF8&iwloc=&output=embed",
+  "googleMapsDirectionsUrl": "https://maps.app.goo.gl/MZkAEkMwwRaAJEMG9?g_st=aw",
+  "socialMedia": {
+    "youtube": "[ADD OFFICIAL SOCIAL MEDIA LINK]",
+    "facebook": "[ADD OFFICIAL SOCIAL MEDIA LINK]",
+    "instagram": "[ADD OFFICIAL SOCIAL MEDIA LINK]",
+    "whatsapp": "[ADD OFFICIAL SOCIAL MEDIA LINK]"
+  },
+  "dailyPooja": [
+    { "name": { "english": "Morning Pooja (Kalai Pooja)", "tamil": "காலை பூஜை" }, "time": "06:00 AM", "note": "[SAMPLE — ADD ACTUAL TIME]" },
+    { "name": { "english": "Uchikala Pooja (Noon)", "tamil": "உச்சிகால பூஜை" }, "time": "12:00 PM", "note": "[SAMPLE — ADD ACTUAL TIME]" },
+    { "name": { "english": "Evening Pooja (Malai Pooja)", "tamil": "மாலை பூஜை" }, "time": "06:00 PM", "note": "[SAMPLE — ADD ACTUAL TIME]" },
+    { "name": { "english": "Night Pooja (Iravu Pooja)", "tamil": "இரவு பூஜை" }, "time": "08:00 PM", "note": "[SAMPLE — ADD ACTUAL TIME]" }
+  ],
+  "donationPresets": [100, 250, 500, 1000],
+  "note": "This file is the single source of truth for temple details. Replace every [ADD ...] placeholder with real information — see docs/temple-information.md"
+}
